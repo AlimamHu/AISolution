@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fill the form</title>
+</head>
+
+<body>
+    <form onsubmit="sendEmail()">
+
+        <input type="email"  name="email" id="email" placeholder="Your Email" data-rule="email"
+            data-msg="Please enter a valid email" />
+
+        <textarea  name="message" rows="5" data-rule="required"
+            data-msg="Please write something for us" placeholder="Message"></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail(){
+            // Email.send({
+            //     Host: "smtp.gmail.com",
+            //     Username: "alimamhussain8619@gmail.com",
+            //     Password: "Prediction@99971#go",
+            //     To: 'alimamhussain8619@gmail.com',
+            //     From: document.getElementById('email').value,
+            //     Subject: "This is the subject",
+            //     Body: "And this is the body"
+            // }).then(
+            //     message => alert(message)
+            // );
+console.log("message");
+        }
+
+
+    </script>
+</body>
+
+</html>

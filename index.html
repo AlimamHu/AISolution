@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+  <link href="img/favicon.png" rel="icon">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HKSOFTWARE</title>
+  <!-- <link href="css/style.css" rel="stylesheet"> -->
+
+
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Montserrat:300,400,700"
+    rel="stylesheet">
+
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/magnific-popup/magnific-popup.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .aboveup {
+      background: url('./img/home.webp') no-repeat;
+      /* background-position: cover; */
+      /* background-size: 100%; */
+      width: 100%;
+      height: 1000px;
+      background-size: cover;
+    }
+
+
+
+    #header {
+      padding: 20px 0;
+      height: 84px;
+      transition: all 0.5s;
+      z-index: 997;
+
+      background: #e0d8d83a;
+      background: #e0d8d87a;
+      box-shadow: 0px 6px 9px 0px rgba(0, 0, 0, 0.06);
+      backdrop-filter: blur(10px);
+
+    }
+
+    #header #logo h1 {
+      font-size: 42px;
+      margin: 0;
+      padding: 0;
+      line-height: 1;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 700;
+    }
+
+    #header #logo h1 a {
+      color: #0c2e8a;
+      line-height: 1;
+      display: inline-block;
+      font-weight: normal;
+    }
+
+    #header #logo h1 a span {
+      color: #0c2e8a;
+      font-weight: bold;
+      background: linear-gradient(45deg, #0c2e8a 0%, #a3ebd5 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    #header #logo img {
+      padding: 0;
+      margin: 0;
+    }
+
+    @media (max-width: 768px) {
+      #header {
+        padding: 20px 0;
+        height: 74px;
+      }
+
+      #header #logo h1 {
+        font-size: 34px;
+      }
+
+      #header #logo img {
+        max-height: 40px;
+      }
+    }
+
+
+    /*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+    /* Nav Menu Essentials */
+    .nav-menu,
+    .nav-menu * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .nav-menu ul {
+      position: absolute;
+      display: none;
+      top: 100%;
+      left: 0;
+      z-index: 99;
+    }
+
+    .nav-menu li {
+      position: relative;
+      white-space: nowrap;
+    }
+
+    .nav-menu>li {
+      float: left;
+    }
+
+    .nav-menu li:hover>ul,
+    .nav-menu li.sfHover>ul {
+      display: block;
+    }
+
+    .nav-menu ul ul {
+      top: 0;
+      left: 100%;
+    }
+
+    .nav-menu ul li {
+      min-width: 180px;
+    }
+
+    /* Nav Menu Arrows */
+    .sf-arrows .sf-with-ul {
+      padding-right: 22px;
+    }
+
+    .sf-arrows .sf-with-ul:after {
+      content: "\f107";
+      position: absolute;
+      right: 8px;
+      font-family: FontAwesome;
+      font-style: normal;
+      font-weight: normal;
+    }
+
+    .sf-arrows ul .sf-with-ul:after {
+      content: "\f105";
+    }
+
+    /* Nav Meu Container */
+    #nav-menu-container {
+      float: right;
+      margin: 0;
+    }
+
+    @media (max-width: 768px) {
+      #nav-menu-container {
+        display: none;
+      }
+    }
+
+    /* Nav Meu Styling */
+    .nav-menu a {
+      padding: 10px 8px;
+      text-decoration: none;
+      display: inline-block;
+      color: #555;
+      color: #fff;
+      font-family: "Raleway", sans-serif;
+      font-weight: 700;
+      font-size: 14px;
+      outline: none;
+    }
+
+    .nav-menu li:hover>a,
+    .nav-menu>.menu-active>a {
+      color: #0c2e8a;
+    }
+
+    .nav-menu a:hover {
+      color: white;
+      ;
+    }
+
+    .nav-menu>li {
+      margin-left: 10px;
+    }
+
+    .nav-menu ul {
+      margin: 4px 0 0 0;
+      padding: 10px;
+      box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+      background: #ffffff52;
+      backdrop-filter: blur(10px);
+    }
+
+    .nav-menu ul li {
+      transition: 0.3s;
+    }
+
+    .nav-menu ul li a {
+      padding: 10px;
+      color: #333;
+      color: #fff;
+      transition: 0.3s;
+      display: block;
+      font-size: 13px;
+      text-transform: none;
+    }
+
+    .nav-menu ul li:hover>a {
+      color: #0c2e8a;
+    }
+
+    .nav-menu ul ul {
+      margin: 0;
+    }
+
+    /* Mobile Nav Toggle */
+    #mobile-nav-toggle {
+      position: fixed;
+      right: 0;
+      top: 0;
+      z-index: 999;
+      margin: 20px 20px 0 0;
+      border: 0;
+      background: none;
+      font-size: 24px;
+      display: none;
+      transition: all 0.4s;
+      outline: none;
+      cursor: pointer;
+    }
+
+    #mobile-nav-toggle i {
+      color: #555;
+    }
+
+    @media (max-width: 768px) {
+      #mobile-nav-toggle {
+        display: inline;
+      }
+    }
+
+    /* Mobile Nav Styling */
+    #mobile-nav {
+      position: fixed;
+      top: 0;
+      padding-top: 18px;
+      bottom: 0;
+      z-index: 998;
+      background: rgba(65, 83, 95, 0.9);
+      background: rgba(155, 171, 181, 0.459);
+    backdrop-filter: blur(20px);
+      left: -260px;
+      width: 260px;
+      overflow-y: auto;
+      transition: 0.4s;
+    }
+
+    #mobile-nav ul {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+
+    #mobile-nav ul li {
+      position: relative;
+    }
+
+    #mobile-nav ul li a {
+      color: #fff;
+      font-size: 16px;
+      overflow: hidden;
+      padding: 10px 22px 10px 15px;
+      position: relative;
+      text-decoration: none;
+      width: 100%;
+      display: block;
+      outline: none;
+    }
+
+    #mobile-nav ul li a:hover {
+      color: #fff;
+    }
+
+    #mobile-nav ul li li {
+      padding-left: 30px;
+    }
+
+    #mobile-nav ul .menu-has-children i {
+      position: absolute;
+      right: 0;
+      z-index: 99;
+      padding: 15px;
+      cursor: pointer;
+
+      color: blue;
+    }
+
+    #mobile-nav ul .menu-has-children i.fa-chevron-up {
+      color: #0c2e8a;
+      color: white !important;
+    }
+
+    #mobile-nav ul .menu-item-active {
+      color: #0c2e8a;
+      color: #fff;
+      font-weight: 300;
+    }
+
+    #mobile-body-overly {
+      width: 100%;
+      height: 100%;
+      z-index: 997;
+      top: 0;
+      left: 0;
+      position: fixed;
+      /* background: rgba(110, 111, 184, 0.281); */
+
+      display: none;
+    }
+
+    /* Mobile Nav body classes */
+    body.mobile-nav-active {
+      overflow: hidden;
+    }
+
+    body.mobile-nav-active #mobile-nav {
+      left: 0;
+    }
+
+    body.mobile-nav-active #mobile-nav-toggle {
+      color: #fff;
+    }
+
+    /*--------------------------------------------------------------
+# Sections
+--------------------------------------------------------------*/
+    /* Sections Header
+--------------------------------*/
+    .section-header {
+      margin-bottom: 30px;
+    }
+
+    .section-header h2 {
+      font-size: 32px;
+      color: #0c2e8a;
+      text-transform: uppercase;
+      font-weight: 700;
+      position: relative;
+      padding-bottom: 20px;
+
+    }
+
+    .section-header h2::before {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 50px;
+      height: 3px;
+      background: #0c2e8a;
+      bottom: 0;
+      left: 0;
+    }
+
+    .caption {
+      position: absolute;
+      top: 30%;
+      top:234px;
+      left: 10%;
+    }
+
+    .caption h1 {
+      font-size: 4em;
+      color: white;
+      font-weight: bold;
+    }
+
+    .caption h1>span {
+      color: #0c2e8a;
+    }
+
+    .caption p {
+      color: #ffffffcf;
+      font-style: italic;
+    }
+
+    .caption::before {
+      content: '';
+      height: 285px;
+      width: 30px;
+      border: 2px solid #0c2e8a;
+      background: #0c2e8a;
+      position: absolute;
+      top: 11px;
+      left: -52px;
+    }
+
+    @media (max-width: 984px) {
+      #secondabout {
+        flex-direction: column-reverse;
+        margin-top: 20px;
+
+        /* margin-bottom: 1px; */
+      }
+    }
+
+    @media (max-width: 576px) {
+      .caption h1 {
+        font-size: 3em;
+        margin-top: 20px;
+
+        /* margin-bottom: 1px; */
+      }
+
+      .caption {
+        left: 20%;
+      }
+    }
+
+    @media (max-width: 947px) {
+      .caption::before {
+        height: 362px;
+      }
+    }
+
+    @media (max-width: 912px) {
+      .caption::before {
+        height: 439px;
+      }
+    }
+
+    #secondabout {
+
+      margin: 35px 0;
+    }
+
+    @media (max-width: 992px) {
+
+      #header #logo h1 a {
+        font-size: 29px;
+      }
+
+    }
+    @media (max-width: 440px) {
+
+      .aboveup {
+        width: 453px;
+        overflow: hidden;
+        box-sizing: border-box;
+
+      }
+      html{
+        width: 448px;
+        /* overflow: hidden; */
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+  <div class="aboveup">
+    <header id="header">
+      <div class="container">
+
+        <div id="logo" class="pull-left">
+          <h1><a href="./index.html" class="scrollto">HK<span>SOFTWARE</span></a></h1>
+
+        </div>
+
+        <nav id="nav-menu-container">
+          <ul class="nav-menu">
+            <!-- <li class="menu-active"><a href="#body">Home</a></li> -->
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="./Services.html">SERVICES</a></li>
+            <li class=""><a href="./Portfolio.html">PORTFOLIOS</a>
+            </li>
+            <li><a href="./About Us.html">ABOUT US</a></li>
+
+            <!-- <li><a href="./">Team</a></li> -->
+            <li><a href="./Contact.html">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+
+
+    </header>
+
+    <div class="caption">
+
+      <!-- <h1>fastSoftware <br> <span> Solution</span> what's <br> your importent </h1> -->
+
+      <h1> <span> HKSOFTWARE</span> <br> Empowering Businesses <br> with Innovative Solutions</h1>
+      <p>fsoftware if you want to purchec don't stop you <br> with help of use provide information</p>
+
+    </div>
+  </div>
+
+
+
+
+
+  <main id="main">
+
+
+    <!-- <section id="about" class="">
+      <div class="container">
+
+        <div class="row wow fadeInUp">
+
+
+
+          <div class="col-lg-6 content">
+            <h3>About Us</h3>
+            <h2>The Importance of Individual Commitment in Company's Production and Management</h2>
+
+            <ul>
+              <li><i class="ion-android-checkmark-circle"></i> Individual commitment to a group effort—that is what
+                makes a team work, a company work, a society work,a civilisation work.” CodeAspire actually corelates
+                these lines in production and management of company's</li>
+           
+              <a href="#">Read More...</a>
+            </ul>
+
+          </div>
+          <div class="col-lg-6 about-img">
+            <img src="img/about 1.png" alt="">
+          </div>
+        </div>
+
+        <div class="row wow fadeInUp" id="secondabout">
+          <div class="col-lg-6 about-img">
+            <img src="img/about 2.png" alt="">
+          </div>
+
+          <div class="col-lg-6 content">
+
+            <h2>Highly Secuare By over Expert Developer.</h2>
+
+            <ul>
+              <li><i class="ion-android-checkmark-circle"></i>fastSoftware solution what's importent to delever you over
+                bast product with Your compatible windows PC into a fully functioning , Terminal server at a freaction
+                of the cost of Microsoft Citrix ad other solution Ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.</li>
+              <a href="#">Read More...</a>
+            </ul>
+
+          </div>
+        </div>
+
+      </div>
+    </section> -->
+
+
+    <section id="services">
+      <div class="container">
+        <div class="section-header">
+          <h2>Services</h2>
+          <p>Urban legend Never understand other one but trust on us Lorem ipsum dolor sit amet consectetur. Ex, doloremque.
+
+          </p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-6">
+            <div class="box wow fadeInLeft">
+              <!-- <div class="icon"><i class="fa fa-bar-chart"></i></div> -->
+              <div class="icon"><i class="fa fa-laptop" aria-hidden="true"></i>
+              </div>
+              <h4 class="title"><a href="">Web Development</a></h4>
+              <p class="description">Refers to the tasks associated with creating, building, and maintaining websites and web applications that run online on a browser.</p>
+            </div>
+          </div>
+ 
+      
+          
+          
+          
+          <div class="col-lg-6">
+            <div class="box wow fadeInRight">
+              <!-- <div class="icon"><i class="fa fa-picture-o"></i></div> -->
+              <div class="icon"><i class="fa fa-mobile" aria-hidden="true"></i>
+              </div>
+              <h4 class="title"><a href="">Mobile Application Development</a></h4>
+              <p class="description">Discover the latest app development tools, platform updates, training, and documentation for developers.</p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="box wow fadeInLeft">
+              <!-- <div class="icon"><i class="fa fa-bar-chart"></i></div> -->
+              <div class="icon"><i class="fa fa-server" aria-hidden="true"></i>
+              </div>
+              <h4 class="title"><a href="">Software Solutions</a></h4>
+              <p class="description"> A software solution is typically custom-built or configured to solve a specific customer problem. It could include: Custom software development; 
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="box wow fadeInLeft" data-wow-delay="0.2s">
+              <div class="icon"><i class="fa fa-cog" aria-hidden="true"></i>
+              </div>
+              <h4 class="title"><a href="">Quality Assurance</a></h4>
+              <p class="description">Showcase the ability to create innovative and intuitive mobile applications for various platforms (iOS, Android) that enhance user experiences.</p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="box wow fadeInLeft" data-wow-delay="0.2s">
+              <div class="icon"><i class="fa fa-picture-o" aria-hidden="true"></i>
+              </div>
+              <h4 class="title"><a href="">Designing Services
+              </a></h4>
+              <p class="description">the promotion of brands to connect with potential customers using the internet and other forms of digital communication</p>
+            </div>
+          </div>
+
+          
+          
+          
+          <div class="col-lg-6">
+            <div class="box wow fadeInRight" data-wow-delay="0.2s">
+              <div class="icon"><i class="fa fa-shopping-bag"></i></div>
+              <h4 class="title"><a href="">Digital Marketing</a></h4>
+              <p class="description"> Emphasize the company's commitment to ensuring the reliability, functionality, and security of software products processes.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+<!-- 
+    <section id="clients" class="wow fadeInUp">
+
+
+      <div class="owl-carousel clients-carousel">
+        <img src="img/clients/client-1.png" alt="">
+        <img src="img/clients/client-2.png" alt="">
+        <img src="img/clients/client-3.png" alt="">
+        <img src="img/clients/client-4.png" alt="">
+        <img src="img/clients/client-5.png" alt="">
+        <img src="img/clients/client-6.png" alt="">
+        <img src="img/clients/client-7.png" alt="">
+        <img src="img/clients/client-8.png" alt="">
+      </div>
+
+    </section> -->
+
+
+    <!--==========================
+      Call To Action Section
+    ============================-->
+    <section id="call-to-action" class="wow fadeInUp">
+      <div class="container">
+        <!-- text-center when normal screen -->
+        <!-- text-lg-right -->
+        <div class="text-left">
+          <h3 class="cta-title">Let's Develop Your Next Great Company !</h3>
+          <p class="cta-text"> Do you need a unique Software Solution for you company? we know how to help you!</p>
+          <a class="cta-btn align-middle" href="#">Get In Touch</a>
+          <a class="cta-btn align-middle" href="#">Learn More</a>
+        </div>
+
+
+      </div>
+    </section><!-- #call-to-action -->
+
+
+    <!--==========================
+      Testimonials Section
+    ============================-->
+    <section id="testimonials" class="wow fadeInUp">
+      <div class="container">
+        <div class="section-header">
+          <h2>Testimonials</h2>
+          <p>Sed tamen tempor magna labore dolore dolor sint tempor duis magna elit veniam aliqua esse amet veniam enim
+            export quid quid veniam aliqua eram noster malis nulla duis fugiat culpa esse aute nulla ipsum velit export
+            irure minim illum fore</p>
+        </div>
+        <div class="owl-carousel testimonials-carousel">
+
+          <div class="testimonial-item">
+            <img src="img/testimonial-1.jpg" class="testimonial-img" alt="">
+            <h3>Saul Goodman</h3>
+            <h4>Ceo &amp; Founder</h4>
+            <p>
+              <!-- <img src="img/quote-sign-left.png" class="quote-sign-left" alt=""> -->
+              Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium
+              quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+              <!-- <img src="img/quote-sign-right.png" class="quote-sign-right" alt=""> -->
+            </p>
+
+          </div>
+
+          <div class="testimonial-item">
+            <img src="img/testimonial-2.jpg" class="testimonial-img" alt="">
+            <h3>Sara Wilsson</h3>
+            <h4>Designer</h4>
+            <p>
+              <!-- <img src="img/quote-sign-left.png" class="quote-sign-left" alt=""> -->
+              Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis
+              quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+              <!-- <img src="img/quote-sign-right.png" class="quote-sign-right" alt=""> -->
+            </p>
+
+          </div>
+
+          <div class="testimonial-item">
+            <img src="img/testimonial-3.jpg" class="testimonial-img" alt="">
+            <h3>Jena Karlis</h3>
+            <h4>Store Owner</h4>
+            <p>
+              <!-- <img src="img/quote-sign-left.png" class="quote-sign-left" alt=""> -->
+              Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor
+              labore quem eram duis noster aute amet eram fore quis sint minim.
+              <!-- <img src="img/quote-sign-right.png" class="quote-sign-right" alt=""> -->
+            </p>
+
+          </div>
+
+          <div class="testimonial-item">
+            <img src="img/testimonial-4.jpg" class="testimonial-img" alt="">
+            <h3>Matt Brandon</h3>
+            <h4>Freelancer</h4>
+            <p>
+              <!-- <img src="img/quote-sign-left.png" class="quote-sign-left" alt=""> -->
+              Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim
+              dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+              <!-- <img src="img/quote-sign-right.png" class="quote-sign-right" alt=""> -->
+            </p>
+
+          </div>
+
+          <div class="testimonial-item">
+            <img src="img/testimonial-5.jpg" class="testimonial-img" alt="">
+            <h3>John Larson</h3>
+            <h4>Entrepreneur</h4>
+            <p>
+              <!-- <img src="img/quote-sign-left.png" class="quote-sign-left" alt=""> -->
+              Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa
+              labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+              <!-- <img src="img/quote-sign-right.png" class="quote-sign-right" alt=""> -->
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- #testimonials -->
+
+
+
+
+  </main>
+
+
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="container">
+
+
+      <div class="container-fluid footer">
+        <div class="row">
+
+          <div class="col">
+
+            <h2 class="mb-4 f-25 teko title-head"><b> HK Software
+              </b>Solution </h2>
+
+
+
+            <div class="new-box line-height f-14">
+
+              <i class='fa fa-home'></i>
+
+
+              <p> Sahid Nagar,
+                Bhubaneswar,
+                Odisha,
+                754103</p>
+
+            </div>
+
+            <!-- email -->
+            <div class="new-box line-height f-14">
+
+              <i class='fa fa-envelope-open'></i>
+
+
+              <p>Info@hksoftware.in
+              </p>
+
+            </div>
+
+
+
+
+            <div class="call-icon new-box line-height f-14">
+              <i class='fa fa-phone-square'></i>
+
+
+              <p> <a href="tel:8287335958" class="white">(+91) 63701 48998
+                </a></p>
+            </div>
+
+            <div class="social-links">
+              <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+              <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+              <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+              <!-- <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a> -->
+              <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+            </div>
+
+
+            <!-- second coloum -->
+          </div>
+ 
+
+
+
+        </div>
+      </div>
+
+      <!-- copyright section -->
+      <hr>
+      <div class="text-center">
+
+        <div class="row  bottom-nav">
+          <p class="m-0 m-auto">© Copyright 2023 All Rights Reserved by <span class="color-change  font-bold fw-bold">
+            HK Software Solution &nbsp;</span> </p>
+        </div>
+
+
+     
+      </div>
+    </div>
+
+  </footer><!-- End Footer -->
+
+
+
+  <a href="javascript:void(0)" class="whatsupapp d-flex align-items-center justify-content-center"
+    onclick="window.location.href='https://wa.me/6370148998'" target="_blank">
+    <i class='fa fa-whatsapp'></i></a>
+
+
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/magnific-popup/magnific-popup.min.js"></script>
+  <script src="lib/sticky/sticky.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8HeI8o-c1NppZA-92oYlXakhDPYR7XMY"></script>
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
